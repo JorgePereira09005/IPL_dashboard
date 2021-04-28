@@ -3,11 +3,13 @@ package jmpc.ipl_dashboard.controller;
 import jmpc.ipl_dashboard.model.Team;
 import jmpc.ipl_dashboard.repository.MatchRepository;
 import jmpc.ipl_dashboard.repository.TeamRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
     private TeamRepository teamRepository;
